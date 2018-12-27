@@ -29,7 +29,7 @@ class App extends Component {
     const display = previousState.display;
 
     // Handling zeros
-    if (input === 0 && (
+    if (input === "0" && (
         display.charAt(display.length-1) === "" || display.charAt(display.length-1) === "+" ||
         display.charAt(display.length-1) === "-" || display.charAt(display.length-1) === "/" ||
         display.charAt(display.length-1) === "*")){

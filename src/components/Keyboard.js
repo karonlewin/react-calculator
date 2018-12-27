@@ -1,6 +1,27 @@
 import React from "react";
 
 class Keyboard extends React.Component {
+
+  handleKeyPress = (event) => {
+    var keyCode = event.which || event.keyCode;
+
+    if ((keyCode >= 48 && keyCode <= 57) || (keyCode >= 96 && keyCode <= 105)
+        || keyCode === 106 || keyCode === 109 || keyCode === 111 || keyCode === 107) {
+     this.props.addToDisplay(event.key);
+    }
+
+    if (keyCode === 13){
+      this.props.calculate()
+    }
+  }
+
+  componentDidMount(){
+    document.addEventListener("keydown", this.handleKeyPress, false);
+  }
+  componentWillUnmount(){
+    document.removeEventListener("keydown", this.handleKeyPress, false);
+  }
+
   render() {
     return (
       <div>
