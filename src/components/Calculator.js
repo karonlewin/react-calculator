@@ -7,6 +7,7 @@ class Calculator extends React.Component {
     return (
       <div>
         <Display display={this.props.display} />
+        <br />
         <Keyboard addToDisplay={this.props.addToDisplay}
                   clear={this.props.clear}
                   calculate={this.props.calculate} />

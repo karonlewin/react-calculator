@@ -76,10 +76,7 @@ class Keyboard extends React.Component {
               <td>
                 <button type="button" onClick={() => this.props.addToDisplay(0)}>0</button>
               </td>
-              <td>
-                <button type="button">CE</button>
-              </td>
-              <td>
+              <td colspan="2">
                 <button type="button" onClick={() => this.props.clear()}>C</button>
               </td>
               <td>
