@@ -1,7 +1,7 @@
 ## React Calculator
 This project was made to practice ReactJS.
 
-[![Calculator Screenshot](https://raw.githubusercontent.com/karonlewin/react-calculator/master/public/screenshot.png)
+![Calculator Screenshot](https://raw.githubusercontent.com/karonlewin/react-calculator/master/public/screenshot.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
